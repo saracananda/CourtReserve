@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Sora";
+    
+}
+
+.reserva-usuario {
+    margin: auto;
+    width: 100%;
+}
+
+.reserva-analise-disponibilidade-usuario {
+    background-image: url("../img/fundo-buscaDisponibilidade.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.busca-disponibilidade {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.text-disponibilidade {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#title-reservas {
+    margin: 0;
+    font-size: 40px;
+}
+
+#subtitle-descricao {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.content-fornecimento-dados {
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    padding: 5px 10px;
+}
+
+.content-fornecimento-dados > img {
+    width: 30px;
+}
+
+.input-dados-reserva {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.input-dados-reserva > label {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.input-dados-reserva > p {
+    font-size: 12px;
+}
+
+.input-dados-reserva > input {
+    background-color: #ffffff00;
+    border: 0.1px solid #666666;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.horarios {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.conteudo{
+    width: 100%;
+}
+h4{
+    margin:0;
+    padding-top: 20px;
+}
+
+#box1{
+    background-image: url("../img/passo1.png");
+    width: 220px;
+    height: 260px;
+    background-size: cover;
+}
+#box2{
+    background-image: url("../img/passo2.png");
+    width: 220px;
+    height: 260px;
+    background-size: cover;
+}
+#box3{
+    background-image: url("../img/passo3.png");
+    width: 220px;
+    height: 260px;
+    background-size: cover;
+    
+}
+#box4{
+    background-image: url("../img/passo4.png");
+    width: 220px;
+    height: 260px;
+    background-size: cover;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+}
+.horarios > input {
+    background-color: #ffffff00;
+    border: 0.1px solid #666666;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+.btn-verificarDisponibilidade{
+    background-color: #ff8400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.btn-verificarDisponibilidade > button {
+    border: none;
+    background-color: #f6f6f600;
+    color: #f6f6f6;
+    font-family: "Sora";
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.img-input {
+    width: 18px;
+}
+
+.quadraDisponivel, .equipamentosDisponivel {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+.quadraDisponivel > form, .equipamentosDisponivel > form {
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title-itemDisponivel {
+    font-size: 35px;
+}
+
+.itens-reserva {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content:center;
+    gap: 50px;
+}
+
+.item-reserva {
+    padding: 15px;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px dashed #13510e;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.equipamento {
+    /* Estilos padrão para o equipamento */
+    transition: filter 0.3s ease;
+}
+
+.equipamento.selecionado {
+    filter: grayscale(100%);
+    /* Outros estilos para a div selecionada */
+}
+
+.imagem-item-reserva {
+    width: 200px;
+    height: 130px;
+}
+.imagem-item-reserva > img {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.informacoes-item-reserva {
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+}
+.informacao-item-reserva {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.title-item-reserva {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.descricao-item-reserva {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.btn-item-reserva {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 0.1px solid #13510e;
+    border-radius: 8px;
+    padding: 5px;
+    gap: 5px;
+}
+
+.btn-item-reserva > img {
+    width: 20px;
+    height: auto;
+}
+.btn-item-reserva > button {
+    border: none;
+    color: #13510e;
+    font-size: 12px;
+    background-color: #ffffff00;
+}
+
+.quadraDisponivel > form > .btn-cancelarDisponibilidade {
+    background-color: #000000;
+    border: 0.1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+.img-input {
+    width: 18px;
+}
+
+.btns-disponibilidade{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 100%;
+}
+.btn-cancelarDisponibilidade{
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.btns-disponibilidade > .btn-cancelarDisponibilidade > button{
+    border: none;
+    background-color: #f6f6f600;
+    color: #f6f6f6;
+    font-family: "Sora";
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/*CSS - Painel de Controle - Itens*/
+
+.conteudo{
+    width: 100%;
+}
+#Title-Tutorial{
+    margin:0;
+    padding-top: 20px;
+}
+#Text-Tutorial{
+font-size:26px;
+margin:0;
+}
+.tutorial{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 5px 50px 5px;
+    
+}
+.box{
+    background: #ccc;
+    width: 17%;
+    height: 190px;
+    margin: 0px 20px 0px 20px;
+    border-radius: 20px;
+}
+.justificativa{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 50px;
+
+}
+.titulo-justificativa{
+    text-align: left;
+}
+#title-justify{
+    font-size:30px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.text-justificativa{
+    text-align: center;
+}
+
+#cancelar{
+    font-family: Sora;
+    font-size: 16px;
+    height: 30px;
+    width: 110px;
+    background-color: white;
+    color: black;
+    border:0.1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+#enviar{
+    font-family: Sora;
+    font-size: 16px;
+    height: 30px;
+    width: 110px;
+    background-color: #13510E;
+    color: white;
+    border:0.1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/*CSS- Reserva Solicitação Enviada */
+.conteudo-enviado{
+    width: 100%;
+    height: 250px;
+}
+.mensagem{
+    background-color: #FFD74826;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    border-radius: 25px;
+    text-align: center;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+#mensagem-solicitacao-enviada{
+    font-size: 16px;
+}
+
+div#quadraselecionada{
+    padding: 15px 10px;
+    font-family: MuseoSans;
+    color: #fff;
+    background: #ffc36b;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: none;
+    border-radius: 30px;
+}
+div#quadraselecionada.green{
+    background: #077a1a;
+}
+
+div#aviso{
+    padding: 15px 0;
+    font-family: MuseoSans;
+    color: #fff;
+    background: #ffc36b;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: none;
+}
+
+div#aviso.red{
+    background: #F90055;
+}
+
+.imgcomfiltro {
+    filter: grayscale(100%);
+}

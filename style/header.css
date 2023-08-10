@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Sora";
+}
+p{
+    margin: 0;
+}
+
+.header-usuario-registrado {
+    background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(19, 81, 14, 0.92) 0%,
+        rgba(19, 81, 14, 0.95) 73.96%,
+        #13510e 100%
+    );
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btns-usuario-registrado a{
+    text-decoration: none;
+}
+#logo-header {
+    width: 55px;
+    padding: 10px;
+    height: auto;
+}
+.btn-entrar{
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.btns-usuario-registrado {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+.btn-header {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+}
+.btn-usuario-subst {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+.btn-subst {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+}
+.btn-subst:nth-child(2) {
+    padding: 5px 18px;
+    border: 0.2px solid white;
+    border-radius: 25px;
+}
+#btn-subst-profile{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-usuario{
+    width: 30px;
+    height: auto;
+}
+
+.header-part-right{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}

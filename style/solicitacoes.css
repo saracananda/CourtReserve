@@ -1,0 +1,100 @@
+
+body{
+    background-color: #FFFFFF;
+    font-family: 'Sora';
+    margin: 0;
+}
+.conteudo{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+#hr-linha{
+    background-color: black;
+    width: 99%;
+
+}
+.eventos-solicitacoes{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 80%;
+}
+.titulo-Eventos{
+    width: 100%;
+    height: 80px;
+    background-color: #FFFFFF;
+}
+h1{
+    font-size: 24px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+table{
+    width: 100%;
+    font-family: Sora;
+    font-size: 14px;
+    text-align: left;
+}
+th{
+    text-align: center;
+    color: #000000;
+    padding-bottom: 10px;
+    border-bottom: 2px #ccc solid;
+}
+.table>:not(caption)>*>*{
+    text-align: center;
+}
+td{
+    border-bottom:1px #ccc solid;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* CSS - Painel de Controle com Justificatica*/
+
+#texto-solicitante{
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 25px;
+}
+#texto-solicitacao{
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 25px;
+    padding-top: 20px;
+}
+.mostrar-justificativa{
+    height: 450px;
+    width:45%;
+    border-radius: 15px;
+    border: 0.1px solid #989898;
+    margin-top: 50px;
+    margin-right: 40px;
+    text-align: center;
+}
+#texto-justificativa{
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 25px;
+    padding-top: 20px;
+}
+.Eventos-solicitacoes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;  
+    width: 90%;  
+}
+.eventos-dados{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 25px;
+    width:55%;
+}
+.footer{
+    display: flex; 
+    gap: 10px;
+    justify-content: center;
+    margin-top: 60px;
+}

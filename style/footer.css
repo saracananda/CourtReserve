@@ -1,0 +1,23 @@
+.rodape {
+    background-color: rgb(29, 31, 27);
+    margin-top: 50px;
+  }
+
+  .logrodape img {
+  margin-top: 20px;
+  width: auto;
+  height: 100px;
+}
+
+.texrodape1 {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  line-height: 25px;
+  color: #ffffff;
+  padding: 20px;
+}
+.logrodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
